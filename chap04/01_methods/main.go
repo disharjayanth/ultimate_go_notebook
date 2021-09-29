@@ -7,10 +7,12 @@ type user struct {
 	email string
 }
 
+// Prints user name with respective user email.
 func (u user) notify() {
 	fmt.Printf("Sending User email to %s<%s>\n", u.name, u.email)
 }
 
+// Accepts email which is to be changed.
 func (u *user) changeEmail(email string) {
 	u.email = email
 }
