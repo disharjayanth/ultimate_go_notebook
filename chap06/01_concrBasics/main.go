@@ -8,9 +8,9 @@ import (
 )
 
 // sets max no. of cpus that can be used for executing simultaneously
-// func init() {
-// 	runtime.GOMAXPROCS(1)
-// }
+func init() {
+	runtime.GOMAXPROCS(2)
+}
 
 func upperCase() {
 	for i := 'A'; i <= 'Z'; i++ {
