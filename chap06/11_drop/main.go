@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"time"
 )
 
 func drop() {
@@ -25,6 +26,7 @@ func drop() {
 
 	close(ch)
 
+	time.Sleep(1 * time.Second)
 	fmt.Println("parent: shutdown signal.....")
 }
 
