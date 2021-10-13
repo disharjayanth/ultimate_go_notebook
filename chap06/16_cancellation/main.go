@@ -29,6 +29,7 @@ func channelCancellation(stop <-chan struct{}) {
 		if err != nil {
 			return err
 		}
+		defer res.Body.Close()
 
 		sb, _ := ioutil.ReadAll(res.Body)
 		fmt.Println("Response:", string(sb))
