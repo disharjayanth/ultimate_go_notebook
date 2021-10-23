@@ -1,0 +1,15 @@
+syntax="proto3";
+
+option go_package="/avgpb";
+
+message AvgRequest{
+    int64 num = 1;
+}
+
+message AvgResponse{
+    float result = 1;
+}
+
+service AvgService{
+    rpc Avg (stream AvgRequest) returns (AvgResponse);
+}

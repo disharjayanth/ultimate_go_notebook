@@ -7,7 +7,7 @@ import (
 	"log"
 	"net"
 
-	"github.com/disharjayanth/ultimate_go_notebook/grpcExample/hellopb"
+	"github.com/disharjayanth/ultimate_go_notebook/grpcExample/01_basicClientServer/hellopb"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 )
